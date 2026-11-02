@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Let us C</string>
+    <string name="about_text">App created using AndroForge Studio (Website 2 APK Pro Compatible Engine).</string>
+    <string name="share_text">Hi there, Give this C Programming Example App a try.</string>
+    <string name="exit_text">Are you sure you want to Exit?</string>
+</resources>

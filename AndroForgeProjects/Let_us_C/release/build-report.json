@@ -1,0 +1,197 @@
+{
+  "build": {
+    "id": "bld_mvzarfur_oivv",
+    "projectId": "proj_letusc_w2apk",
+    "projectTitle": "Let us C",
+    "applicationId": "com.goyal.letusc",
+    "versionName": "2.0",
+    "versionCode": 20,
+    "targetSdk": 36,
+    "compileSdk": 36,
+    "buildType": "both_release",
+    "status": "SUCCESS",
+    "createdAt": "2026-11-02T13:30:55.287Z",
+    "durationMs": 180,
+    "apkFilename": "Let_us_C-v2.0-release.apk",
+    "apkSizeBytes": 5941,
+    "apkSha256": "0a2903777e96b914db6b47dd93cb81c1af698c1108e38ba15e6c2a32354c2628",
+    "aabFilename": "Let_us_C-v2.0-release.aab",
+    "aabSizeBytes": 5971,
+    "aabSha256": "14661830f6449d94d3275291d75b074de4246aa2166823c847cda330c987b78b",
+    "sourceZipFilename": "Let_us_C-v2.0-android-studio-source.zip",
+    "sourceZipSizeBytes": 10449,
+    "signingAlias": "upload_key",
+    "signingSha256": "43:65:89:1C:9D:9C:10:EF:59:7F:D7:E4:D9:ED:56:11:5A:D5:B2:4D:36:F1:40:6F:92:58:DE:59:69:60:22:D3",
+    "outputDirOnDisk": "/app/applet/AndroForgeProjects/Let_us_C/release",
+    "logs": [
+      {
+        "timestamp": "2026-11-02T13:30:55.108Z",
+        "task": ":prepareWorkspace",
+        "level": "TASK",
+        "message": "Initializing project workspace at /app/applet/AndroForgeProjects/Let_us_C"
+      },
+      {
+        "timestamp": "2026-11-02T13:30:55.112Z",
+        "task": ":generateKotlinSources",
+        "level": "SUCCESS",
+        "message": "Generated 17 Kotlin & Gradle project files targeting API 36 (compileSdk 36, AGP 8.8.0)."
+      },
+      {
+        "timestamp": "2026-11-02T13:30:55.115Z",
+        "task": ":archiveAndroidSource",
+        "level": "INFO",
+        "message": "Archived full Android Studio Kotlin project (10.2 KB) -> Let_us_C-v2.0-android-studio-source.zip"
+      },
+      {
+        "timestamp": "2026-11-02T13:30:55.115Z",
+        "task": ":app:compileReleaseKotlin",
+        "level": "TASK",
+        "message": "Compiling MainActivity.kt with WebViewAssetLoader & API 36 WindowInsets..."
+      },
+      {
+        "timestamp": "2026-11-02T13:30:55.115Z",
+        "task": ":app:mergeReleaseAssets",
+        "level": "TASK",
+        "message": "Packaging 3 web assets into assets/www/..."
+      },
+      {
+        "timestamp": "2026-11-02T13:30:55.191Z",
+        "task": ":app:signReleaseApk",
+        "level": "SUCCESS",
+        "message": "Signed Let_us_C-v2.0-release.apk (5.8 KB) with alias \"upload_key\" (SHA-256: 43:65:89:1C:9D:9C:10:EF...) and verified 4-byte zipalign."
+      },
+      {
+        "timestamp": "2026-11-02T13:30:55.191Z",
+        "task": ":app:bundleReleaseResources",
+        "level": "TASK",
+        "message": "Building protocol buffer resources (resources.pb) and BundleConfig.pb..."
+      },
+      {
+        "timestamp": "2026-11-02T13:30:55.287Z",
+        "task": ":app:signReleaseBundle",
+        "level": "SUCCESS",
+        "message": "Signed App Bundle Let_us_C-v2.0-release.aab (5.8 KB) with alias \"upload_key\" and verified base module structure."
+      },
+      {
+        "timestamp": "2026-11-02T13:30:55.287Z",
+        "task": ":app:verifyPlayReadiness",
+        "level": "SUCCESS",
+        "message": "Google Play Readiness Check completed with status: PASS (Score: 100/100)."
+      }
+    ],
+    "playReadinessStatus": "PASS"
+  },
+  "playReadiness": {
+    "overallStatus": "PASS",
+    "generatedAt": "2026-11-02T13:30:55.287Z",
+    "applicationId": "com.goyal.letusc",
+    "versionCode": 20,
+    "versionName": "2.0",
+    "targetSdk": 36,
+    "compileSdk": 36,
+    "score": 100,
+    "checks": [
+      {
+        "id": "target-api-level",
+        "category": "API Level",
+        "title": "Target SDK Level (Android 15/16 Requirement)",
+        "status": "PASS",
+        "currentValue": "API 36 (compileSdk 36)",
+        "requiredValue": "API 35 minimum (API 36 Android 16 recommended)",
+        "explanation": "Application targets Android 16 (API 36), satisfying current and upcoming Google Play Console target API policies.",
+        "actionableFix": "No change required."
+      },
+      {
+        "id": "package-id-validity",
+        "category": "Signing & Identity",
+        "title": "Application ID & Package Continuity",
+        "status": "PASS",
+        "currentValue": "com.goyal.letusc",
+        "requiredValue": "Must match existing Play package (com.goyal.letusc)",
+        "explanation": "Application ID is valid and preserves package continuity.",
+        "actionableFix": "No change required."
+      },
+      {
+        "id": "version-code",
+        "category": "Signing & Identity",
+        "title": "Positive Monotonic Version Code",
+        "status": "PASS",
+        "currentValue": "versionCode 20 (2.0)",
+        "requiredValue": "Positive integer >= 1, strictly greater than previous Play release",
+        "explanation": "Version Code 20 is a valid positive integer.",
+        "actionableFix": "Ensure versionCode is incremented by at least +1 before uploading a new release."
+      },
+      {
+        "id": "release-signing",
+        "category": "Signing & Identity",
+        "title": "Cryptographic Release Signing & Upload Key Match",
+        "status": "PASS",
+        "currentValue": "Goyal Softech Upload Keystore (alias: upload_key, SHA-256: 43:65:89:1C:9D:9C:10:EF...)",
+        "requiredValue": "Upload certificate SHA-256 matching 43:65:89:1C:9D:9C:10:EF...",
+        "explanation": "Release signing identity is configured and verified.",
+        "actionableFix": "Back up your keystore file and credentials securely."
+      },
+      {
+        "id": "abi-64bit",
+        "category": "Architecture & Bundle",
+        "title": "64-Bit Architecture Compliance (arm64-v8a)",
+        "status": "PASS",
+        "currentValue": "arm64-v8a, armeabi-v7a, x86_64",
+        "requiredValue": "Must include arm64-v8a",
+        "explanation": "Includes 64-bit ARM (arm64-v8a) support required by Google Play and Android 15/16 devices.",
+        "actionableFix": "No change required."
+      },
+      {
+        "id": "cleartext-traffic",
+        "category": "Security & WebView",
+        "title": "HTTPS Encryption & Cleartext Traffic Policy",
+        "status": "PASS",
+        "currentValue": "usesCleartextTraffic=\"false\" (HTTPS Only)",
+        "requiredValue": "HTTPS Only (usesCleartextTraffic=\"false\")",
+        "explanation": "Cleartext HTTP traffic is blocked in AndroidManifest.xml.",
+        "actionableFix": "No change required."
+      },
+      {
+        "id": "webview-asset-loader",
+        "category": "Security & WebView",
+        "title": "WebViewAssetLoader vs Unsafe file:// Access",
+        "status": "PASS",
+        "currentValue": "WebViewAssetLoader (https://appassets.androidplatform.net)",
+        "requiredValue": "WebViewAssetLoader with allowFileAccess = false",
+        "explanation": "Local HTML assets are served safely over https://appassets.androidplatform.net via AndroidX WebViewAssetLoader.",
+        "actionableFix": "No change required."
+      },
+      {
+        "id": "admob-policy",
+        "category": "Policy & Privacy",
+        "title": "AdMob SDK & UMP Privacy Consent Configuration",
+        "status": "PASS",
+        "currentValue": "AdMob Disabled (No Ads)",
+        "requiredValue": "Valid production App ID + UMP Consent or Ads Disabled",
+        "explanation": "Monetization configuration complies with Google Mobile Ads SDK guidelines.",
+        "actionableFix": "No change required."
+      },
+      {
+        "id": "firebase-config",
+        "category": "Branding & Manifest",
+        "title": "Firebase Configuration & Package Binding",
+        "status": "PASS",
+        "currentValue": "Firebase Disabled",
+        "requiredValue": "Valid google-services.json matching applicationId when Firebase is enabled",
+        "explanation": "Firebase configuration state is valid.",
+        "actionableFix": "No change required."
+      },
+      {
+        "id": "adaptive-icon-splash",
+        "category": "Branding & Manifest",
+        "title": "Adaptive Launcher Icon & Android 12+ SplashScreen API",
+        "status": "PASS",
+        "currentValue": "Adaptive Icon (#00687B) + AndroidX SplashScreen 1.0.1",
+        "requiredValue": "mipmap-anydpi-v26 adaptive icon & Core SplashScreen API",
+        "explanation": "Project generates mipmap-anydpi-v26 adaptive icons across mdpi–xxxhdpi and uses installSplashScreen() for Android 12–16.",
+        "actionableFix": "No change required."
+      }
+    ],
+    "disclaimer": "Passing this automated build readiness checker verifies technical SDK, manifest, signing, and bundle structure compliance, but does NOT guarantee Google Play Console approval. Google Play also evaluates app functionality, minimum utility beyond a static website wrapper, Privacy Policy disclosures, Data Safety form accuracy, and Developer Program Policies."
+  }
+}

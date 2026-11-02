@@ -1,0 +1,908 @@
+{
+  "projects": [
+    {
+      "id": "proj_letusc_w2apk",
+      "createdAt": "2026-11-02T13:29:33.857Z",
+      "updatedAt": "2026-11-02T13:29:33.857Z",
+      "sourceType": "local_html",
+      "appTitle": "Let us C",
+      "packageSegments": [
+        "com",
+        "goyal",
+        "letusc"
+      ],
+      "applicationId": "com.goyal.letusc",
+      "namespace": "com.goyal.letusc",
+      "versionName": "2.0",
+      "versionCode": 20,
+      "minSdk": 24,
+      "targetSdk": 36,
+      "compileSdk": 36,
+      "gradleVersion": "8.11.1",
+      "agpVersion": "8.8.0",
+      "kotlinVersion": "2.1.0",
+      "abis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "orientation": "auto",
+      "outputDirectory": "C:\\Users\\GoyalSoftech\\Desktop\\AndroForgeProjects\\LetUsC",
+      "aboutDialogText": "App created using AndroForge Studio (Website 2 APK Pro Compatible Engine).",
+      "appShareText": "Hi there, Give this C Programming Example App a try.",
+      "appExitText": "Are you sure you want to Exit?",
+      "cacheMode": "default",
+      "customErrorPageMode": "default",
+      "customErrorHtml": "",
+      "urlProtocol": "https://",
+      "webUrl": "docs.letusc-examples.org",
+      "localHtmlEntry": "index.html",
+      "frameworkDetected": "Static HTML5 + Prism C Syntax Highlighter",
+      "htmlAssets": [
+        {
+          "path": "index.html",
+          "encoding": "utf8",
+          "mimeType": "text/html",
+          "sizeBytes": 1842,
+          "content": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n  <title>Let us C — Example Programs</title>\n  <link rel=\"stylesheet\" href=\"css/style.css\" />\n</head>\n<body>\n  <header class=\"topbar\">\n    <h1>Let us C · Example Programs</h1>\n    <p>Offline C17 Reference & Interactive Output Simulator</p>\n  </header>\n  <main class=\"container\">\n    <section class=\"card\">\n      <h2>Chapter 1: Pointers & Recursion</h2>\n      <pre><code>#include &lt;stdio.h&gt;\nint factorial(int n) {\n    return (n &lt;= 1) ? 1 : n * factorial(n - 1);\n}\nint main() {\n    printf(\"Factorial(6) = %d\\n\", factorial(6));\n    return 0;\n}</code></pre>\n      <button id=\"runBtn\" onclick=\"runDemo()\">Run Program Offline</button>\n      <div id=\"output\" class=\"console-out\">Ready to execute locally inside WebViewAssetLoader...</div>\n    </section>\n  </main>\n  <script src=\"js/app.js\"></script>\n</body>\n</html>"
+        },
+        {
+          "path": "css/style.css",
+          "encoding": "utf8",
+          "mimeType": "text/css",
+          "sizeBytes": 512,
+          "content": "body { font-family: system-ui, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }\n.topbar { background: #00687B; color: #ffffff; padding: 16px 20px; }\n.topbar h1 { margin: 0; font-size: 18px; }\n.topbar p { margin: 4px 0 0; font-size: 12px; opacity: 0.85; }\n.container { padding: 16px; }\n.card { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 16px; }\npre { background: #0f172a; color: #38bdf8; padding: 12px; border-radius: 8px; overflow-x: auto; font-size: 13px; }\nbutton { background: #00687B; color: #fff; border: none; padding: 10px 16px; border-radius: 6px; font-weight: 600; cursor: pointer; }\n.console-out { margin-top: 12px; padding: 10px; background: #f1f5f9; border-radius: 6px; font-family: monospace; font-size: 13px; }"
+        },
+        {
+          "path": "js/app.js",
+          "encoding": "utf8",
+          "mimeType": "application/javascript",
+          "sizeBytes": 310,
+          "content": "function factorial(n) { return n <= 1 ? 1 : n * factorial(n - 1); }\nfunction runDemo() {\n  var el = document.getElementById('output');\n  var val = factorial(6);\n  localStorage.setItem('last_run_result', String(val));\n  el.textContent = 'Output > Factorial(6) = ' + val + ' (Saved to offline localStorage)';\n}"
+        }
+      ],
+      "iconBackgroundHex": "#00687B",
+      "iconForegroundText": "C",
+      "materialSchemeId": "classic-teal",
+      "primaryColor": "#00687B",
+      "secondaryColor": "#0097A7",
+      "tertiaryColor": "#4DD0E1",
+      "statusBarColor": "#004F5E",
+      "navigationBarColor": "#003640",
+      "themeAppearance": "light",
+      "progressWheelMode": "system",
+      "progressWheelStyle": "Lollipop",
+      "splash": {
+        "enabled": true,
+        "durationMs": 2000,
+        "mode": "custom",
+        "backgroundColor": "#FFFFFF",
+        "textColor": "#00687B",
+        "subtitleText": "Example Programs"
+      },
+      "extras": {
+        "supportZoom": false,
+        "zoomButtons": false,
+        "sideScrollBars": false,
+        "textSelection": false,
+        "saveFormData": false,
+        "fullScreen": false,
+        "javascriptApis": true,
+        "httpsOnlyContent": true,
+        "allowExternalUrls": false,
+        "confirmOnExit": true,
+        "enableGpsPrompt": false,
+        "disallowScreenshot": false,
+        "allowFileAccess": false,
+        "allowCrossOriginLocal": true,
+        "showToolbarTitle": false,
+        "liveToolbarTitle": false,
+        "homeButton": false,
+        "pullToRefresh": true,
+        "deepLinking": false,
+        "popupBlocker": false,
+        "domStorage": true,
+        "mediaPlaybackRequiresUserGesture": false,
+        "safeBrowsing": true,
+        "keepScreenAwake": false,
+        "downloadsEnabled": true,
+        "fileUploadEnabled": true,
+        "cameraPermission": false,
+        "microphonePermission": false,
+        "hideWebViewUa": false,
+        "hideAndroidMobileUa": false,
+        "desktopMode": false,
+        "customUserAgent": "",
+        "allowedDomains": [
+          "appassets.androidplatform.net",
+          "docs.letusc-examples.org"
+        ],
+        "deepLinkScheme": "letusc",
+        "deepLinkHost": "open"
+      },
+      "admob": {
+        "enabled": false,
+        "testMode": true,
+        "appId": "ca-app-pub-3940256099942544~3347511713",
+        "bannerEnabled": false,
+        "bannerUnitId": "ca-app-pub-3940256099942544/6300978111",
+        "bannerPosition": "bottom",
+        "interstitialEnabled": false,
+        "interstitialUnitId": "ca-app-pub-3940256099942544/1033173712",
+        "interstitialIntervalSec": 180,
+        "rewardedEnabled": false,
+        "rewardedUnitId": "ca-app-pub-3940256099942544/5224354917",
+        "nativeAdsEnabled": false,
+        "umpConsentEnabled": true,
+        "childDirectedTreatment": false,
+        "testDeviceIds": [
+          "33BE2250B43518CCDA7DE426D04EE231"
+        ]
+      },
+      "firebase": {
+        "enabled": false,
+        "googleServicesJsonProvided": false,
+        "projectId": "letusc-companion-app",
+        "projectNumber": "984120394812",
+        "mobilesdkAppId": "1:984120394812:android:8a9b7c6d5e4f3a2b",
+        "packageName": "com.goyal.letusc",
+        "fcmEnabled": false,
+        "defaultNotificationChannel": "letusc_updates",
+        "inAppMessagingEnabled": false,
+        "analyticsEnabled": false,
+        "crashlyticsEnabled": false,
+        "remoteConfigEnabled": false
+      },
+      "navDrawer": {
+        "enabled": true,
+        "bottomNavEnabled": false,
+        "headerTitle": "Let us C Companion",
+        "headerSubtitle": "21 Chapters · Offline C17 Compiler Guide",
+        "headerBgColor": "#00687B",
+        "footerText": "v2.0 · Offline Ready",
+        "items": [
+          {
+            "id": "nav_1",
+            "label": "Chapter 1: Getting Started",
+            "icon": "BookOpen",
+            "actionType": "local_page",
+            "target": "index.html"
+          },
+          {
+            "id": "nav_2",
+            "label": "Pointers & Arrays",
+            "icon": "Code",
+            "actionType": "local_page",
+            "target": "index.html#pointers"
+          },
+          {
+            "id": "nav_3",
+            "label": "Share App with Friends",
+            "icon": "Share2",
+            "actionType": "share",
+            "target": ""
+          },
+          {
+            "id": "nav_4",
+            "label": "Exit Application",
+            "icon": "LogOut",
+            "actionType": "exit",
+            "target": ""
+          }
+        ]
+      },
+      "signingProfileId": "ks_bccaf183bc39",
+      "releaseNotes": "Upgraded to Android 16 (API 36) with AndroidX WebViewAssetLoader and signed release bundle.",
+      "isExistingPlayApp": true,
+      "originalApplicationId": "com.goyal.letusc",
+      "originalSigningSha256": "43:65:89:1C:9D:9C:10:EF:59:7F:D7:E4:D9:ED:56:11:5A:D5:B2:4D:36:F1:40:6F:92:58:DE:59:69:60:22:D3",
+      "lastBuildAt": "2026-11-02T13:30:55.287Z",
+      "lastBuildStatus": "SUCCESS"
+    },
+    {
+      "id": "proj_legacy_api33_store",
+      "createdAt": "2026-11-02T13:29:33.857Z",
+      "updatedAt": "2026-11-02T13:32:55.434Z",
+      "sourceType": "android_project",
+      "appTitle": "Nusantara POS Offline Catalog",
+      "packageSegments": [
+        "id",
+        "nusantara",
+        "poscatalog"
+      ],
+      "applicationId": "id.nusantara.poscatalog",
+      "namespace": "id.nusantara.poscatalog",
+      "versionName": "3.4.0",
+      "versionCode": 35,
+      "minSdk": 24,
+      "targetSdk": 36,
+      "compileSdk": 36,
+      "gradleVersion": "8.11.1",
+      "agpVersion": "8.8.0",
+      "kotlinVersion": "2.1.0",
+      "abis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "orientation": "auto",
+      "outputDirectory": "C:\\Users\\AndroForge\\Projects\\NusantaraPOS",
+      "aboutDialogText": "App created using AndroForge Studio (Website 2 APK Pro Compatible Engine).",
+      "appShareText": "Hi there, Give this C Programming Example App a try.",
+      "appExitText": "Are you sure you want to Exit?",
+      "cacheMode": "default",
+      "customErrorPageMode": "default",
+      "customErrorHtml": "",
+      "urlProtocol": "https://",
+      "webUrl": "docs.letusc-examples.org",
+      "localHtmlEntry": "index.html",
+      "frameworkDetected": "Static HTML5 + Prism C Syntax Highlighter",
+      "htmlAssets": [
+        {
+          "path": "index.html",
+          "encoding": "utf8",
+          "mimeType": "text/html",
+          "sizeBytes": 1842,
+          "content": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n  <title>Let us C — Example Programs</title>\n  <link rel=\"stylesheet\" href=\"css/style.css\" />\n</head>\n<body>\n  <header class=\"topbar\">\n    <h1>Let us C · Example Programs</h1>\n    <p>Offline C17 Reference & Interactive Output Simulator</p>\n  </header>\n  <main class=\"container\">\n    <section class=\"card\">\n      <h2>Chapter 1: Pointers & Recursion</h2>\n      <pre><code>#include &lt;stdio.h&gt;\nint factorial(int n) {\n    return (n &lt;= 1) ? 1 : n * factorial(n - 1);\n}\nint main() {\n    printf(\"Factorial(6) = %d\\n\", factorial(6));\n    return 0;\n}</code></pre>\n      <button id=\"runBtn\" onclick=\"runDemo()\">Run Program Offline</button>\n      <div id=\"output\" class=\"console-out\">Ready to execute locally inside WebViewAssetLoader...</div>\n    </section>\n  </main>\n  <script src=\"js/app.js\"></script>\n</body>\n</html>"
+        },
+        {
+          "path": "css/style.css",
+          "encoding": "utf8",
+          "mimeType": "text/css",
+          "sizeBytes": 512,
+          "content": "body { font-family: system-ui, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }\n.topbar { background: #00687B; color: #ffffff; padding: 16px 20px; }\n.topbar h1 { margin: 0; font-size: 18px; }\n.topbar p { margin: 4px 0 0; font-size: 12px; opacity: 0.85; }\n.container { padding: 16px; }\n.card { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 16px; }\npre { background: #0f172a; color: #38bdf8; padding: 12px; border-radius: 8px; overflow-x: auto; font-size: 13px; }\nbutton { background: #00687B; color: #fff; border: none; padding: 10px 16px; border-radius: 6px; font-weight: 600; cursor: pointer; }\n.console-out { margin-top: 12px; padding: 10px; background: #f1f5f9; border-radius: 6px; font-family: monospace; font-size: 13px; }"
+        },
+        {
+          "path": "js/app.js",
+          "encoding": "utf8",
+          "mimeType": "application/javascript",
+          "sizeBytes": 310,
+          "content": "function factorial(n) { return n <= 1 ? 1 : n * factorial(n - 1); }\nfunction runDemo() {\n  var el = document.getElementById('output');\n  var val = factorial(6);\n  localStorage.setItem('last_run_result', String(val));\n  el.textContent = 'Output > Factorial(6) = ' + val + ' (Saved to offline localStorage)';\n}"
+        }
+      ],
+      "iconBackgroundHex": "#059669",
+      "iconForegroundText": "NP",
+      "materialSchemeId": "android-emerald",
+      "primaryColor": "#059669",
+      "secondaryColor": "#10B981",
+      "tertiaryColor": "#6EE7B7",
+      "statusBarColor": "#047857",
+      "navigationBarColor": "#064E3B",
+      "themeAppearance": "light",
+      "progressWheelMode": "system",
+      "progressWheelStyle": "Lollipop",
+      "splash": {
+        "enabled": true,
+        "durationMs": 2000,
+        "mode": "custom",
+        "backgroundColor": "#FFFFFF",
+        "textColor": "#00687B",
+        "subtitleText": "Example Programs"
+      },
+      "extras": {
+        "supportZoom": false,
+        "zoomButtons": false,
+        "sideScrollBars": false,
+        "textSelection": false,
+        "saveFormData": false,
+        "fullScreen": false,
+        "javascriptApis": true,
+        "httpsOnlyContent": true,
+        "allowExternalUrls": false,
+        "confirmOnExit": true,
+        "enableGpsPrompt": false,
+        "disallowScreenshot": false,
+        "allowFileAccess": false,
+        "allowCrossOriginLocal": true,
+        "showToolbarTitle": false,
+        "liveToolbarTitle": false,
+        "homeButton": false,
+        "pullToRefresh": true,
+        "deepLinking": false,
+        "popupBlocker": false,
+        "domStorage": true,
+        "mediaPlaybackRequiresUserGesture": false,
+        "safeBrowsing": true,
+        "keepScreenAwake": false,
+        "downloadsEnabled": true,
+        "fileUploadEnabled": true,
+        "cameraPermission": false,
+        "microphonePermission": false,
+        "hideWebViewUa": false,
+        "hideAndroidMobileUa": false,
+        "desktopMode": false,
+        "customUserAgent": "",
+        "allowedDomains": [
+          "appassets.androidplatform.net",
+          "docs.letusc-examples.org"
+        ],
+        "deepLinkScheme": "letusc",
+        "deepLinkHost": "open"
+      },
+      "admob": {
+        "enabled": false,
+        "testMode": true,
+        "appId": "ca-app-pub-3940256099942544~3347511713",
+        "bannerEnabled": false,
+        "bannerUnitId": "ca-app-pub-3940256099942544/6300978111",
+        "bannerPosition": "bottom",
+        "interstitialEnabled": false,
+        "interstitialUnitId": "ca-app-pub-3940256099942544/1033173712",
+        "interstitialIntervalSec": 180,
+        "rewardedEnabled": false,
+        "rewardedUnitId": "ca-app-pub-3940256099942544/5224354917",
+        "nativeAdsEnabled": false,
+        "umpConsentEnabled": true,
+        "childDirectedTreatment": false,
+        "testDeviceIds": [
+          "33BE2250B43518CCDA7DE426D04EE231"
+        ]
+      },
+      "firebase": {
+        "enabled": false,
+        "googleServicesJsonProvided": false,
+        "projectId": "letusc-companion-app",
+        "projectNumber": "984120394812",
+        "mobilesdkAppId": "1:984120394812:android:8a9b7c6d5e4f3a2b",
+        "packageName": "com.goyal.letusc",
+        "fcmEnabled": false,
+        "defaultNotificationChannel": "letusc_updates",
+        "inAppMessagingEnabled": false,
+        "analyticsEnabled": false,
+        "crashlyticsEnabled": false,
+        "remoteConfigEnabled": false
+      },
+      "navDrawer": {
+        "enabled": true,
+        "bottomNavEnabled": false,
+        "headerTitle": "Let us C Companion",
+        "headerSubtitle": "21 Chapters · Offline C17 Compiler Guide",
+        "headerBgColor": "#00687B",
+        "footerText": "v2.0 · Offline Ready",
+        "items": [
+          {
+            "id": "nav_1",
+            "label": "Chapter 1: Getting Started",
+            "icon": "BookOpen",
+            "actionType": "local_page",
+            "target": "index.html"
+          },
+          {
+            "id": "nav_2",
+            "label": "Pointers & Arrays",
+            "icon": "Code",
+            "actionType": "local_page",
+            "target": "index.html#pointers"
+          },
+          {
+            "id": "nav_3",
+            "label": "Share App with Friends",
+            "icon": "Share2",
+            "actionType": "share",
+            "target": ""
+          },
+          {
+            "id": "nav_4",
+            "label": "Exit Application",
+            "icon": "LogOut",
+            "actionType": "exit",
+            "target": ""
+          }
+        ]
+      },
+      "signingProfileId": "ks_bccaf183bc39",
+      "releaseNotes": "Legacy API 33 Play Store build requiring migration to Android 16 (API 36).",
+      "isExistingPlayApp": true,
+      "originalApplicationId": "id.nusantara.poscatalog",
+      "originalSigningSha256": "43:65:89:1C:9D:9C:10:EF:59:7F:D7:E4:D9:ED:56:11:5A:D5:B2:4D:36:F1:40:6F:92:58:DE:59:69:60:22:D3"
+    },
+    {
+      "id": "proj_online_devportal",
+      "createdAt": "2026-11-02T13:29:33.857Z",
+      "updatedAt": "2026-11-02T13:29:33.857Z",
+      "sourceType": "web_url",
+      "appTitle": "Kotlin Docs WebView Portal",
+      "packageSegments": [
+        "org",
+        "androforge",
+        "kotlindocs"
+      ],
+      "applicationId": "org.androforge.kotlindocs",
+      "namespace": "org.androforge.kotlindocs",
+      "versionName": "1.2.0",
+      "versionCode": 12,
+      "minSdk": 26,
+      "targetSdk": 36,
+      "compileSdk": 36,
+      "gradleVersion": "8.11.1",
+      "agpVersion": "8.8.0",
+      "kotlinVersion": "2.1.0",
+      "abis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "orientation": "auto",
+      "outputDirectory": "C:\\Users\\AndroForge\\Projects\\KotlinDocsPortal",
+      "aboutDialogText": "App created using AndroForge Studio (Website 2 APK Pro Compatible Engine).",
+      "appShareText": "Hi there, Give this C Programming Example App a try.",
+      "appExitText": "Are you sure you want to Exit?",
+      "cacheMode": "default",
+      "customErrorPageMode": "default",
+      "customErrorHtml": "",
+      "urlProtocol": "https://",
+      "webUrl": "kotlinlang.org/docs/home.html",
+      "localHtmlEntry": "index.html",
+      "frameworkDetected": "Static HTML5 + Prism C Syntax Highlighter",
+      "htmlAssets": [
+        {
+          "path": "index.html",
+          "encoding": "utf8",
+          "mimeType": "text/html",
+          "sizeBytes": 1842,
+          "content": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n  <title>Let us C — Example Programs</title>\n  <link rel=\"stylesheet\" href=\"css/style.css\" />\n</head>\n<body>\n  <header class=\"topbar\">\n    <h1>Let us C · Example Programs</h1>\n    <p>Offline C17 Reference & Interactive Output Simulator</p>\n  </header>\n  <main class=\"container\">\n    <section class=\"card\">\n      <h2>Chapter 1: Pointers & Recursion</h2>\n      <pre><code>#include &lt;stdio.h&gt;\nint factorial(int n) {\n    return (n &lt;= 1) ? 1 : n * factorial(n - 1);\n}\nint main() {\n    printf(\"Factorial(6) = %d\\n\", factorial(6));\n    return 0;\n}</code></pre>\n      <button id=\"runBtn\" onclick=\"runDemo()\">Run Program Offline</button>\n      <div id=\"output\" class=\"console-out\">Ready to execute locally inside WebViewAssetLoader...</div>\n    </section>\n  </main>\n  <script src=\"js/app.js\"></script>\n</body>\n</html>"
+        },
+        {
+          "path": "css/style.css",
+          "encoding": "utf8",
+          "mimeType": "text/css",
+          "sizeBytes": 512,
+          "content": "body { font-family: system-ui, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }\n.topbar { background: #00687B; color: #ffffff; padding: 16px 20px; }\n.topbar h1 { margin: 0; font-size: 18px; }\n.topbar p { margin: 4px 0 0; font-size: 12px; opacity: 0.85; }\n.container { padding: 16px; }\n.card { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 16px; }\npre { background: #0f172a; color: #38bdf8; padding: 12px; border-radius: 8px; overflow-x: auto; font-size: 13px; }\nbutton { background: #00687B; color: #fff; border: none; padding: 10px 16px; border-radius: 6px; font-weight: 600; cursor: pointer; }\n.console-out { margin-top: 12px; padding: 10px; background: #f1f5f9; border-radius: 6px; font-family: monospace; font-size: 13px; }"
+        },
+        {
+          "path": "js/app.js",
+          "encoding": "utf8",
+          "mimeType": "application/javascript",
+          "sizeBytes": 310,
+          "content": "function factorial(n) { return n <= 1 ? 1 : n * factorial(n - 1); }\nfunction runDemo() {\n  var el = document.getElementById('output');\n  var val = factorial(6);\n  localStorage.setItem('last_run_result', String(val));\n  el.textContent = 'Output > Factorial(6) = ' + val + ' (Saved to offline localStorage)';\n}"
+        }
+      ],
+      "iconBackgroundHex": "#4338CA",
+      "iconForegroundText": "KT",
+      "materialSchemeId": "indigo-slate",
+      "primaryColor": "#4338CA",
+      "secondaryColor": "#6366F1",
+      "tertiaryColor": "#A5B4FC",
+      "statusBarColor": "#3730A3",
+      "navigationBarColor": "#312E81",
+      "themeAppearance": "light",
+      "progressWheelMode": "system",
+      "progressWheelStyle": "Lollipop",
+      "splash": {
+        "enabled": true,
+        "durationMs": 2000,
+        "mode": "custom",
+        "backgroundColor": "#FFFFFF",
+        "textColor": "#00687B",
+        "subtitleText": "Example Programs"
+      },
+      "extras": {
+        "supportZoom": false,
+        "zoomButtons": false,
+        "sideScrollBars": false,
+        "textSelection": false,
+        "saveFormData": false,
+        "fullScreen": false,
+        "javascriptApis": true,
+        "httpsOnlyContent": true,
+        "allowExternalUrls": false,
+        "confirmOnExit": true,
+        "enableGpsPrompt": false,
+        "disallowScreenshot": false,
+        "allowFileAccess": false,
+        "allowCrossOriginLocal": true,
+        "showToolbarTitle": false,
+        "liveToolbarTitle": false,
+        "homeButton": false,
+        "pullToRefresh": true,
+        "deepLinking": false,
+        "popupBlocker": false,
+        "domStorage": true,
+        "mediaPlaybackRequiresUserGesture": false,
+        "safeBrowsing": true,
+        "keepScreenAwake": false,
+        "downloadsEnabled": true,
+        "fileUploadEnabled": true,
+        "cameraPermission": false,
+        "microphonePermission": false,
+        "hideWebViewUa": false,
+        "hideAndroidMobileUa": false,
+        "desktopMode": false,
+        "customUserAgent": "",
+        "allowedDomains": [
+          "appassets.androidplatform.net",
+          "docs.letusc-examples.org"
+        ],
+        "deepLinkScheme": "letusc",
+        "deepLinkHost": "open"
+      },
+      "admob": {
+        "enabled": false,
+        "testMode": true,
+        "appId": "ca-app-pub-3940256099942544~3347511713",
+        "bannerEnabled": false,
+        "bannerUnitId": "ca-app-pub-3940256099942544/6300978111",
+        "bannerPosition": "bottom",
+        "interstitialEnabled": false,
+        "interstitialUnitId": "ca-app-pub-3940256099942544/1033173712",
+        "interstitialIntervalSec": 180,
+        "rewardedEnabled": false,
+        "rewardedUnitId": "ca-app-pub-3940256099942544/5224354917",
+        "nativeAdsEnabled": false,
+        "umpConsentEnabled": true,
+        "childDirectedTreatment": false,
+        "testDeviceIds": [
+          "33BE2250B43518CCDA7DE426D04EE231"
+        ]
+      },
+      "firebase": {
+        "enabled": false,
+        "googleServicesJsonProvided": false,
+        "projectId": "letusc-companion-app",
+        "projectNumber": "984120394812",
+        "mobilesdkAppId": "1:984120394812:android:8a9b7c6d5e4f3a2b",
+        "packageName": "com.goyal.letusc",
+        "fcmEnabled": false,
+        "defaultNotificationChannel": "letusc_updates",
+        "inAppMessagingEnabled": false,
+        "analyticsEnabled": false,
+        "crashlyticsEnabled": false,
+        "remoteConfigEnabled": false
+      },
+      "navDrawer": {
+        "enabled": true,
+        "bottomNavEnabled": false,
+        "headerTitle": "Let us C Companion",
+        "headerSubtitle": "21 Chapters · Offline C17 Compiler Guide",
+        "headerBgColor": "#00687B",
+        "footerText": "v2.0 · Offline Ready",
+        "items": [
+          {
+            "id": "nav_1",
+            "label": "Chapter 1: Getting Started",
+            "icon": "BookOpen",
+            "actionType": "local_page",
+            "target": "index.html"
+          },
+          {
+            "id": "nav_2",
+            "label": "Pointers & Arrays",
+            "icon": "Code",
+            "actionType": "local_page",
+            "target": "index.html#pointers"
+          },
+          {
+            "id": "nav_3",
+            "label": "Share App with Friends",
+            "icon": "Share2",
+            "actionType": "share",
+            "target": ""
+          },
+          {
+            "id": "nav_4",
+            "label": "Exit Application",
+            "icon": "LogOut",
+            "actionType": "exit",
+            "target": ""
+          }
+        ]
+      },
+      "signingProfileId": "ks_bccaf183bc39",
+      "releaseNotes": "Upgraded to Android 16 (API 36) with AndroidX WebViewAssetLoader and signed release bundle.",
+      "isExistingPlayApp": false
+    }
+  ],
+  "keystores": [
+    {
+      "id": "ks_bccaf183bc39",
+      "name": "Goyal Softech Upload Keystore",
+      "storeType": "PKCS12",
+      "alias": "upload_key",
+      "subjectDn": "CN=Goyal Softech Release, O=Goyal Softech Studio, C=IN",
+      "organization": "Goyal Softech Studio",
+      "countryCode": "IN",
+      "validityYears": 25,
+      "createdAt": "2026-11-02T13:29:33.517Z",
+      "sha1Fingerprint": "E6:F2:C9:4D:EA:E4:DF:9B:A1:C3:59:C5:93:A5:9A:16:3F:53:43:6C",
+      "sha256Fingerprint": "43:65:89:1C:9D:9C:10:EF:59:7F:D7:E4:D9:ED:56:11:5A:D5:B2:4D:36:F1:40:6F:92:58:DE:59:69:60:22:D3",
+      "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlE0B0tPKqLlDuNBAFlV4\njypsyKLqRW61UrVs5AhVYZZMnbom9gj7XJcowrGp6CgLryN2yvMLDKM6KDDV22+E\n0elGyYJGORf6Xmj/OwvahpavDc1x0DCi4hcugcgKeMj7lcwFDRvNOs9KyxoZnxpS\nanlddlLHQhSxK2ZZ53mwvmHdNNdbvaUMVUjje0a5HRwZ0lRdihZuTxU7n/BgscFO\nwheZ0c3Pm+vlvsOnG5agPWNgp4weSLFuuqo2NEgQGHI5br/zTukx5JaP536BW5P0\n7KRnnSXGHciUh9voK8m5D58R8Zxzyc4c7D7Ro0Hxh6m0PjkFZyASd9gkzkcvA48v\njwIDAQAB\n-----END PUBLIC KEY-----\n",
+      "certificatePem": "-----BEGIN CERTIFICATE-----\nQU5EUk9GT1JHRS1YNTA5LVYzfENOPUdveWFsIFNvZnRlY2ggUmVsZWFzZSwgTz1H\nb3lhbCBTb2Z0ZWNoIFN0dWRpbywgQz1JTnx1cGxvYWRfa2V5fDCCASIwDQYJKoZI\nhvcNAQEBBQADggEPADCCAQoCggEBAJRNAdLTyqi5Q7jQQBZVeI8qbMii6kVutVK1\nbOQIVWGWTJ26JvYI+1yXKMKxqegoC68jdsrzCwyjOigw1dtvhNHpRsmCRjkX+l5o\n/zsL2oaWrw3NcdAwouIXLoHICnjI+5XMBQ0bzTrPSssaGZ8aUmp5XXZSx0IUsStm\nWed5sL5h3TTXW72lDFVI43tGuR0cGdJUXYoWbk8VO5/wYLHBTsIXmdHNz5vr5b7D\npxuWoD1jYKeMHkixbrqqNjRIEBhyOW6/807pMeSWj+d+gVuT9OykZ50lxh3IlIfb\n6CvJuQ+fEfGcc8nOHOw+0aNB8YeptD45BWcgEnfYJM5HLwOPL48CAwEAAV1s/jV/\nsm+zwAdOOes7W0ZG+1OK3SpFzP+xE+HnRZga8wFStaM8Qh1Jjyt/UhYVO0pvpxWq\nrHq9wBarLJU+COpwjjzR8Gr37w/hw+vfAZL0gq6AePzEx4HI3syDwmFjHefIkC6T\n3tBzQfq1oekya2Y9JI29fZQbU4epHTIXrX51nSRaEQsqE2JsKuvyG2aamJo/yVWM\nVhwkuRN3/+KisEb/bW35DcssPgvSLe54vZrAFfcci6ezDrbDvPXFO+6wR/tEJyGz\nrloCVP2+yOzmEN5OcJ21r9++s06oB+dV9z5lrRlg3gQ8h48dzWN1qr0epkwEbQtS\nammhz7Dw5Wjl/LY=\n-----END CERTIFICATE-----",
+      "encryptedPrivateKeyHex": "d61e781eef437080a61b2af7232450dbf2908bdd64bcbdf76e9138fef59b113c1df6443e0d85d970c86dcbcf9ebaea7c4cdaa10d3cc9e2df8d549a2014630cf2e4152db0ab88a67e1147d9143156359a74cfd8e1c57c3b355e1df2c590021f2f84006c21f286c9a84cba6e61956dc42673e8ad969f61f51f38feab4e7275fe1d14b808a98c33cdbfc765f100a6ef5c00eb0dbdb5349fbcf659e9f95a22a8c0e47c8d86532fa5551e8e59a441eced92d2a5126be547c00a9d532a0c515cbf7ca88782d3a9119e2dabeb9601d7a86513f00b2206926d488221dd6d60ec4fcc858701517fe8ec429531d6c18e195f570e77e25fb7764270718d873d3ed9d72338796b71fb1e4798f44772972b513ea18c57516421870079700810390f94d5fcf3f59ac94dd274d6434a09ca2a1ba48836f5d9e9b3055b3f36590e3699582ef4a914116b7af9a762f85bfdee193aa1836cf8a4eb692bf58bae69827ffe336fd82e231726f17cbb7c492138c5a901822f1761e8435c391603caeabb49d76ccb42440f8ec817b405bcb98770202db2ac924f9ede8a91b53d6ae78dafc04f5456ed51eda7e0d524faca559d40e2c56caff6b3342812cf76ec8b5a67d82c1b6a61d6b5c55a8ac677aa17ec4203ab8e2a53221cca6e96ac3849c609db27bf08c8103a4c3ec94ed87b70041672767a5a39114d361c0b141787f5e2928862954cab47e78f4b71abf3ed093559680271cb127c37e9741985e1c8ea17e751c6b58e6c1bb46c497ec825d7cdb74db2103f00e99789142aa48e2c12b907ca26f7f63486004e075aa6206ae6d847d81e92d2579ce7be6b3b70daf451789cc5188cef8ebe185e30d6bf32094c9c4455b77779c0bda2cffd2afaa9e7e79e9173c15af37cbd57aa4a9f5255b6b4185ce584d691608562e6740f9318416c2559dc609ffa28c2c82f27fce47847c7cd0be206abd9006c5abeb4203a4004f3aef3dc632b7305e3a96a864907b338d360a4a03631d524e820054297267932d69488207550f98d4d8ffb970f223406cdbe1bbbd40a65e52fea1f68e17c474cc5db5381712f4f18975a38a15e66a6708ffcc4a8f925994f1b4298a11ae000c6a9f164f77456fece42c6ca046f5e87ff168f9309470297c9c4be1271f065134a3acc9eed51f243574bc4e44bea5bb96223be1d2b2c53c36fe0c306a5f4b725e09029fa9d9496cdf14e117688f3dde3bda72523d616946c695dfa2d2d6ec24ded339806d89503a0c1d36fa17f0e7bc6fe033010311f3ae45a43d453dea2687f3ac9d8692b2d9221f0c715018161501e57149eb96c1faeb49fafc30e25fda38c7603e577a1c948a66cbdface9b70e3101253204ae2b0ccb31987070c6234ff8834c5dd9f26a1aa3be7e56b38b87daf1c050d82408e412fba93bef1948d0dce34497a9b5a33d6d0cd39e19d2e87f6282df05d636e5a9b5f8c0d15e1d8d3daf0da5d42a370d46b8ea081a76fcd2b32bdd7f0f72961e226512c5b4f53319b61fd712a40e8d74fc5b722c17ff13fc3f0636403f26df8c76d4ba22ba8365c2ece3a2be81b6ae39827130dc879a3163aecf683db7d56da1c7eb7c608bf6e9f677d414de119f533662aacc36f90ac0e2bbb2f8c6180e13319473694ae64481f8be3727c297e5e6a0c856814943eb2bac314c1318e3311c6f881067b38f14195f6f12bf5b77fdee2091098858fc2ba36610b3f44b03a6a43cb42530ea3c1fcc9c957b5e9df7e3ab14058be3134264ed9f7e0a9c415156936d74be6f8061693fa22dc866fd154fd06d7d467d3850b1deb30550e2dc500d07425d9b1d7f7b1d96ee92793b071176ac0e01ad4833a25aabbc94a64cebe07a2ad212f8dfa417a8da8879a33554c346d3b6edd3d2edc09d1f064b4886e157d2175a03de581f8f943eef54afc77b5cd0640bd3ffff2cf8161e1244aa8bcb64ef0792a6a07d7ccba9b04b8d36318950f07241d956420fa2c628ef80bfdaa8852ef784616a4f61b0c427134c8846c89cc3b48f34b1e636666f9c05f12f83f782077e4ebf665d80a1307ba54ce702dfa224bacf52b32982d56bf2660a3f4db87446081fcb612de9593f2be714e8946585ebb13f857d3c849e75e5b87fb7535365d4872e00ec2c6a69aa44be8ca7df6ea86d03ababba85ef946b928ef8960a05001eb9b138a1f8d6a5c48592e539070b52f2280ab9025e112fa0359fba281649de6b711eaa991bfa9d0a51a9f4894e59cbb7d272676227304cb937e941e18555fe285c79f23d9c692c07ee7c275215493e606d85f2edf9ab223ce47c2c28597eba3ba8866067d742c7f71137e78b2eb871b00a33b844d36da7be0d6cc7d0dc492bf4cec58a3634df368d1402f6fdcbbe8fc76605b80f9bb2cc70ec760731699640def8b429b",
+      "ivHex": "08e4e2847632459961a3a4e9",
+      "authTagHex": "76fbe88ce98b1faf2dd2940959e73213",
+      "isPlayUploadKey": true,
+      "linkedPackageName": "com.goyal.letusc"
+    },
+    {
+      "id": "ks_1d6f11a3009c",
+      "name": "AndroForge Universal Signing Key",
+      "storeType": "JKS",
+      "alias": "androforge_release",
+      "subjectDn": "CN=AndroForge Engineering, O=AndroForge Studio, C=US",
+      "organization": "AndroForge Studio",
+      "countryCode": "US",
+      "validityYears": 30,
+      "createdAt": "2026-11-02T13:29:33.724Z",
+      "sha1Fingerprint": "A2:43:9C:33:E9:87:92:D3:FE:F9:0B:97:13:E4:48:74:B3:FB:9E:58",
+      "sha256Fingerprint": "FB:EB:48:A1:2E:35:8E:42:0B:DF:76:2E:EA:6F:A7:A7:C1:6D:27:00:11:C5:3A:B9:0B:A1:1D:4D:52:06:3D:08",
+      "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxogthlWpRRPe65OMD7wG\n9F8qcozp2V7B6h8msL8I6ZqgkkNwuEPT6+8jlwqkhr+oXXe07iZd5b/ZhpDJWp8r\n9SCOFwLUFBv/KWzLt9BLhRjSKetcG80z4RbVP4SWCyaUFA8S+d1cbcSVYs7qO8fI\nmVvBh4qPVWczgrqiQ7g1D74WWpIXzDtvhB39WuDOrl43pzcpbqiWaY9W1ghqQQSM\n11+SHjegXktRIkH+Ze5nPJUQiMwDbCMwJr8v2mMmj7qWjNycIH3ahbcwD8PSdirQ\nB6t3PdlDf9FUZqplVpS2DG6VxYEOVdCCz8cDCYMy0mQfCJ3/kgVXoONKQpeC6DcY\nWQIDAQAB\n-----END PUBLIC KEY-----\n",
+      "certificatePem": "-----BEGIN CERTIFICATE-----\nQU5EUk9GT1JHRS1YNTA5LVYzfENOPUFuZHJvRm9yZ2UgRW5naW5lZXJpbmcsIE89\nQW5kcm9Gb3JnZSBTdHVkaW8sIEM9VVN8YW5kcm9mb3JnZV9yZWxlYXNlfDCCASIw\nDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMaILYZVqUUT3uuTjA+8BvRfKnKM\n6dleweofJrC/COmaoJJDcLhD0+vvI5cKpIa/qF13tO4mXeW/2YaQyVqfK/UgjhcC\n1BQb/ylsy7fQS4UY0inrXBvNM+EW1T+ElgsmlBQPEvndXG3ElWLO6jvHyJlbwYeK\nj1VnM4K6okO4NQ++FlqSF8w7b4Qd/Vrgzq5eN6c3KW6olmmPVtYIakEEjNdfkh43\noF5LUSJB/mXuZzyVEIjMA2wjMCa/L9pjJo+6lozcnCB92oW3MA/D0nYq0Aerdz3Z\nQ3/RVGaqZVaUtgxulcWBDlXQgs/HAwmDMtJkHwid/5IFV6DjSkKXgug3GFkCAwEA\nAbry8ZqWMDND6wRdZAgfiQx+s80WusTfEUPhE43fj9gnGyXTKgKjybzIVKOvpty4\nxsmSasWmYFV/dg51GHHB5LucCVFe/2PgnnBYCqdPsQUJpQAiBYIu1wy7jUw5xMoM\nJPLVvVWy9jpG68KKTW/WZOFcRQ0I7W/zbXodzd6FbpNTKuMBINYXPshEbimCE51n\n0U1no5JVgfBfktVAt91DvRWKCwhE4b+qD8zSBbxFziuG7rRpRkxFtPKQLQy1UBDU\nwqNUjBESlhSCfDdFFWctJpEQmmo6djIwW8Y7t+RRLzDhnRJ2WHISwDB10e26p6TI\nJq2zTsHQkuShG1Tt64TKw6A=\n-----END CERTIFICATE-----",
+      "encryptedPrivateKeyHex": "6113f149930d919575446f47a6ce36618922f2e84a48e86189eb073330caa4842cfc5f5c0052a624524dcdec680a27d4254ed9ca9013c48dbe971f9d1b69bd7bf0831dfdf6a1cc69e0ee4435ecdb3453b1c53536019ef7930468df64fa84aac8aacbd9339c057c761f7532632eccb520a506efa8d2685ce8431bd4990b4523870ad5f3fd69ea54fc0b2501ffde0eb75ed40708f0758c94e208e314000b989b2682d3cc071a1ddac1180f9d70f006d2998bd888781404feb2b6a531dc59d43844689dd790100b0fc916eb601910fd75d37fb04ef8c893270cd59c41899eddb4afde76740d1dd441255b5107698090eab87d3dfde427a9f81c651c13b0d62ab64373475be5495ca6105afa9ae668dab8a60d6c6118ccc59b19c5c299e62af7714b05c44c5f7e58f25be877a5769b763146a025c3b7e8eca6ee0830d4ee84ba3c1baa37d542fc420d5508c174d8643a0a6f4816b1e88073c2e744f8ec3d778a8f1422252b1bac189df749f00a1ef8492279367bfbbfc0536351fce6d69300e46d52dccd50ec8d9b15b5d4c1310fb1d33b79c38a05961581df92599ae6f73a8403c2ccf1dbb5bb1a7788aaa12574fae63780c43b45d308151e0089984645442c44828dcc9324741a768f4b240399af6f114176a7b96ad61f82a8e39a9eabced90dec2137baa73e1c3b7224d64f3faf8ff7518f3e96adc2cc2bd352b82e5809d9edd0e8b2f332ac03383e39477f3733d52050f6dab8f20d30e83f89475814791c8920877355111fb133c190e231fa9643b81f373f8a9bca0bad2c3a64d9093c72cf5ab7daa4fd4fe325f084ec21a40a0a7b6946e5aa63fae4f548fb594000e320517b306ab13f16f75eb6159f2da2e5683e5e7d5575ac22993ef676ce32a49e7ed21e28cba52fcd206356a4dd6491d2a438e5aad09f431f39ae523e3def34cbd4a2edf11a7e8fefc9a41f24222320ec99feb9fc9c1ccecd5d46b8800d32c3f2f218afec4546dd48e20e30a9dd935d39de54e95f6f051f427acc93c57411fadc9deb7a5132ae39a99486eff6f16619046c98e5243261b528e37d55dcd82f8b299fad23b0ac70246d29aab5d3ad03499ceb5c723e8272d8addf16db2501077b929dbc21c092755467c82c746fa3de53aac5e3dc59f3016edb70624d3844c32a4ea4f1c937e97c905b735078ce9249d7d2a4c6e30bbc9b9ef08a2d96c4df7627423a44f823286495ed12121a22916db899decaa6510eae1ca49045076596e7c856008be3b1a7283855b4ae6a31cbbe1ca7e2c423f1de057ea73453083e7c24ddbed3b2bdad78577078dc81fe291213404ef7ee2576701339b54148d6bcd0b08270f6492ec658215d921903cb29b6cce540fe1b07268cba4e4d8b9f82d9e0cdfc0f9f37998425bb7d8280abcb641bc4b30358ff6207dfeb9e9a73e1e1266fa9780923a3b562dc341b87c155d660dfab3d561e67ca460a9d223f76c6a017ac85774acc2692e8d84f57fe839244ffb9b3ea7a4193be0505a219fc434458b7034b5152514aa2bb6a1cbaa55e1304605dfe25e7b42ec2890b8e4d9117f269907dc7ced5e3ca5f4660d318d3d59fe19a2e590000f64594b1c4fe6ff4990aedc58077ed22adb9eb58574e9b58fc2bc49f833c6b634a51b2e0b13a9bef1a3c2aa46e254fa4fd6dc7775ae35f1c2a97845db2ccce832415be48aa64a6c1d524e7038d1f504d1482450944bef79dbf96bc4279527f476c7494c5cbde0fd80c5ef717561f5c7ff991f2a73415423585a0060071563f7bee3bad591c095632a2c1c9bbeae5e0627ae786e7babd8980d70ea0702e899fa900ac559afdc848838ad3b0b644b11b5c2fdb04fad131bdc7f844b06ed957fefb77e49fb365848dcc43ed301ff9cce2fb8f063562f836bcf855111387cb578d05b064a62a021d6436d417c81cbe64332f3a06981b970d5c88afe3f2dc19b61191d281af023c7826fca3fb4ab5347684124e163c04e4ad1f5daaaddee67fbbde1b6efac818338560f8e585c6e56e72076a0528b66681862fa094970ee8049dae9bd618e2db3190cd0e1e82d319b71d4c08be97fabe13f704a22a93aa43af69fbb75b0a583d3a425d455ad26782efe48bfa122b938580e4cdf505e71846617b74824bfb625153fb53d5fe2d5e0eabc32b3a485bfa1a6c68aa057932b119a2a04b46dffa7008771b2f682c9e38e8a6ef528a94a31d0d749c843c504d02beef5fd77907c6d3baa6ba7e35a6cfb6d2b380e5cb5a0ad2b2f754fae94c23f1e9206eba7964713fd53064059470643e922b7334cc2b3b660d26f52999cb7014b4c0c8e998d4393f1238766a5aed7e4db850c631c6bcc987e84b730d1cd77ebf3f6480c0f8c4a95e5ea9cfd9c7a438fda578d89d18b75c17b76e0d49f2ebc372",
+      "ivHex": "4d446ea68cb65c9aa221f211",
+      "authTagHex": "ba476d8d21c6e7227a7a60cbddb07531",
+      "isPlayUploadKey": false
+    }
+  ],
+  "builds": [
+    {
+      "id": "bld_mvzarfur_oivv",
+      "projectId": "proj_letusc_w2apk",
+      "projectTitle": "Let us C",
+      "applicationId": "com.goyal.letusc",
+      "versionName": "2.0",
+      "versionCode": 20,
+      "targetSdk": 36,
+      "compileSdk": 36,
+      "buildType": "both_release",
+      "status": "SUCCESS",
+      "createdAt": "2026-11-02T13:30:55.287Z",
+      "durationMs": 180,
+      "apkFilename": "Let_us_C-v2.0-release.apk",
+      "apkSizeBytes": 5941,
+      "apkSha256": "0a2903777e96b914db6b47dd93cb81c1af698c1108e38ba15e6c2a32354c2628",
+      "aabFilename": "Let_us_C-v2.0-release.aab",
+      "aabSizeBytes": 5971,
+      "aabSha256": "14661830f6449d94d3275291d75b074de4246aa2166823c847cda330c987b78b",
+      "sourceZipFilename": "Let_us_C-v2.0-android-studio-source.zip",
+      "sourceZipSizeBytes": 10449,
+      "signingAlias": "upload_key",
+      "signingSha256": "43:65:89:1C:9D:9C:10:EF:59:7F:D7:E4:D9:ED:56:11:5A:D5:B2:4D:36:F1:40:6F:92:58:DE:59:69:60:22:D3",
+      "outputDirOnDisk": "/app/applet/AndroForgeProjects/Let_us_C/release",
+      "logs": [
+        {
+          "timestamp": "2026-11-02T13:30:55.108Z",
+          "task": ":prepareWorkspace",
+          "level": "TASK",
+          "message": "Initializing project workspace at /app/applet/AndroForgeProjects/Let_us_C"
+        },
+        {
+          "timestamp": "2026-11-02T13:30:55.112Z",
+          "task": ":generateKotlinSources",
+          "level": "SUCCESS",
+          "message": "Generated 17 Kotlin & Gradle project files targeting API 36 (compileSdk 36, AGP 8.8.0)."
+        },
+        {
+          "timestamp": "2026-11-02T13:30:55.115Z",
+          "task": ":archiveAndroidSource",
+          "level": "INFO",
+          "message": "Archived full Android Studio Kotlin project (10.2 KB) -> Let_us_C-v2.0-android-studio-source.zip"
+        },
+        {
+          "timestamp": "2026-11-02T13:30:55.115Z",
+          "task": ":app:compileReleaseKotlin",
+          "level": "TASK",
+          "message": "Compiling MainActivity.kt with WebViewAssetLoader & API 36 WindowInsets..."
+        },
+        {
+          "timestamp": "2026-11-02T13:30:55.115Z",
+          "task": ":app:mergeReleaseAssets",
+          "level": "TASK",
+          "message": "Packaging 3 web assets into assets/www/..."
+        },
+        {
+          "timestamp": "2026-11-02T13:30:55.191Z",
+          "task": ":app:signReleaseApk",
+          "level": "SUCCESS",
+          "message": "Signed Let_us_C-v2.0-release.apk (5.8 KB) with alias \"upload_key\" (SHA-256: 43:65:89:1C:9D:9C:10:EF...) and verified 4-byte zipalign."
+        },
+        {
+          "timestamp": "2026-11-02T13:30:55.191Z",
+          "task": ":app:bundleReleaseResources",
+          "level": "TASK",
+          "message": "Building protocol buffer resources (resources.pb) and BundleConfig.pb..."
+        },
+        {
+          "timestamp": "2026-11-02T13:30:55.287Z",
+          "task": ":app:signReleaseBundle",
+          "level": "SUCCESS",
+          "message": "Signed App Bundle Let_us_C-v2.0-release.aab (5.8 KB) with alias \"upload_key\" and verified base module structure."
+        },
+        {
+          "timestamp": "2026-11-02T13:30:55.287Z",
+          "task": ":app:verifyPlayReadiness",
+          "level": "SUCCESS",
+          "message": "Google Play Readiness Check completed with status: PASS (Score: 100/100)."
+        }
+      ],
+      "playReadinessStatus": "PASS"
+    },
+    {
+      "id": "bld_mvzapp5u_jaqe",
+      "projectId": "proj_letusc_w2apk",
+      "projectTitle": "Let us C",
+      "applicationId": "com.goyal.letusc",
+      "versionName": "2.0",
+      "versionCode": 20,
+      "targetSdk": 36,
+      "compileSdk": 36,
+      "buildType": "both_release",
+      "status": "SUCCESS",
+      "createdAt": "2026-11-02T13:29:34.086Z",
+      "durationMs": 228,
+      "apkFilename": "Let_us_C-v2.0-release.apk",
+      "apkSizeBytes": 5941,
+      "apkSha256": "0a2903777e96b914db6b47dd93cb81c1af698c1108e38ba15e6c2a32354c2628",
+      "aabFilename": "Let_us_C-v2.0-release.aab",
+      "aabSizeBytes": 5971,
+      "aabSha256": "14661830f6449d94d3275291d75b074de4246aa2166823c847cda330c987b78b",
+      "sourceZipFilename": "Let_us_C-v2.0-android-studio-source.zip",
+      "sourceZipSizeBytes": 10449,
+      "signingAlias": "upload_key",
+      "signingSha256": "43:65:89:1C:9D:9C:10:EF:59:7F:D7:E4:D9:ED:56:11:5A:D5:B2:4D:36:F1:40:6F:92:58:DE:59:69:60:22:D3",
+      "outputDirOnDisk": "/app/applet/AndroForgeProjects/Let_us_C/release",
+      "logs": [
+        {
+          "timestamp": "2026-11-02T13:29:33.858Z",
+          "task": ":prepareWorkspace",
+          "level": "TASK",
+          "message": "Initializing project workspace at /app/applet/AndroForgeProjects/Let_us_C"
+        },
+        {
+          "timestamp": "2026-11-02T13:29:33.862Z",
+          "task": ":generateKotlinSources",
+          "level": "SUCCESS",
+          "message": "Generated 17 Kotlin & Gradle project files targeting API 36 (compileSdk 36, AGP 8.8.0)."
+        },
+        {
+          "timestamp": "2026-11-02T13:29:33.868Z",
+          "task": ":archiveAndroidSource",
+          "level": "INFO",
+          "message": "Archived full Android Studio Kotlin project (10.2 KB) -> Let_us_C-v2.0-android-studio-source.zip"
+        },
+        {
+          "timestamp": "2026-11-02T13:29:33.868Z",
+          "task": ":app:compileReleaseKotlin",
+          "level": "TASK",
+          "message": "Compiling MainActivity.kt with WebViewAssetLoader & API 36 WindowInsets..."
+        },
+        {
+          "timestamp": "2026-11-02T13:29:33.868Z",
+          "task": ":app:mergeReleaseAssets",
+          "level": "TASK",
+          "message": "Packaging 3 web assets into assets/www/..."
+        },
+        {
+          "timestamp": "2026-11-02T13:29:33.968Z",
+          "task": ":app:signReleaseApk",
+          "level": "SUCCESS",
+          "message": "Signed Let_us_C-v2.0-release.apk (5.8 KB) with alias \"upload_key\" (SHA-256: 43:65:89:1C:9D:9C:10:EF...) and verified 4-byte zipalign."
+        },
+        {
+          "timestamp": "2026-11-02T13:29:33.968Z",
+          "task": ":app:bundleReleaseResources",
+          "level": "TASK",
+          "message": "Building protocol buffer resources (resources.pb) and BundleConfig.pb..."
+        },
+        {
+          "timestamp": "2026-11-02T13:29:34.085Z",
+          "task": ":app:signReleaseBundle",
+          "level": "SUCCESS",
+          "message": "Signed App Bundle Let_us_C-v2.0-release.aab (5.8 KB) with alias \"upload_key\" and verified base module structure."
+        },
+        {
+          "timestamp": "2026-11-02T13:29:34.086Z",
+          "task": ":app:verifyPlayReadiness",
+          "level": "SUCCESS",
+          "message": "Google Play Readiness Check completed with status: PASS (Score: 100/100)."
+        }
+      ],
+      "playReadinessStatus": "PASS"
+    }
+  ],
+  "upgradeReports": [
+    {
+      "projectId": "proj_legacy_api33_store",
+      "projectTitle": "Nusantara POS Offline Catalog",
+      "backupPath": "/AndroForgeProjects/proj_legacy_api33_store/backups/2026-11-02T13-32-55-434Z_api33_v34",
+      "upgradedAt": "2026-11-02T13:32:55.434Z",
+      "previousMinSdk": 23,
+      "previousTargetSdk": 33,
+      "previousCompileSdk": 33,
+      "previousGradle": "8.2",
+      "previousAgp": "8.1.4",
+      "newMinSdk": 24,
+      "newTargetSdk": 36,
+      "newCompileSdk": 36,
+      "newGradle": "8.11.1",
+      "newAgp": "8.8.0",
+      "previousVersionCode": 34,
+      "newVersionCode": 35,
+      "packageContinuityVerified": true,
+      "signingContinuityVerified": true,
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Create Non-Destructive Project Snapshot Backup",
+          "status": "COMPLETED",
+          "fileAffected": "/AndroForgeProjects/proj_legacy_api33_store/backups/2026-11-02T13-32-55-434Z_api33_v34",
+          "beforeSnippet": "Active workspace: targetSdk=33, versionCode=34",
+          "afterSnippet": "Snapshot archived to /AndroForgeProjects/proj_legacy_api33_store/backups/2026-11-02T13-32-55-434Z_api33_v34",
+          "explanation": "Full project configuration and HTML/Android source tree backed up prior to modifying Gradle or Manifest files."
+        },
+        {
+          "stepNumber": 2,
+          "title": "Analyze Gradle Wrapper Distribution",
+          "status": "COMPLETED",
+          "fileAffected": "gradle/wrapper/gradle-wrapper.properties",
+          "beforeSnippet": "distributionUrl=https\\://services.gradle.org/distributions/gradle-8.2-bin.zip",
+          "afterSnippet": "distributionUrl=https\\://services.gradle.org/distributions/gradle-8.11.1-bin.zip",
+          "explanation": "Upgraded Gradle Wrapper to 8.11.1 required for Android Gradle Plugin 8.8.0 and API 36."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Upgrade Android Gradle Plugin (AGP) & Kotlin Plugin",
+          "status": "COMPLETED",
+          "fileAffected": "build.gradle.kts",
+          "beforeSnippet": "id(\"com.android.application\") version \"8.1.4\" apply false\nid(\"org.jetbrains.kotlin.android\") version \"1.9.10\" apply false",
+          "afterSnippet": "id(\"com.android.application\") version \"8.8.0\" apply false\nid(\"org.jetbrains.kotlin.android\") version \"2.1.0\" apply false",
+          "explanation": "Aligned AGP 8.8.0 and Kotlin 2.1.0 with JDK 17/21 bytecode targets."
+        },
+        {
+          "stepNumber": 4,
+          "title": "Migrate compileSdk and targetSdk to API 36",
+          "status": "COMPLETED",
+          "fileAffected": "app/build.gradle.kts",
+          "beforeSnippet": "compileSdk = 33\ndefaultConfig {\n    minSdk = 23\n    targetSdk = 33\n}",
+          "afterSnippet": "compileSdk = 36\ndefaultConfig {\n    minSdk = 24\n    targetSdk = 36\n}",
+          "explanation": "Updated compileSdk and targetSdk to API 36 (Android 16 Baklava)."
+        },
+        {
+          "stepNumber": 5,
+          "title": "Upgrade AndroidX & WebKit Dependencies",
+          "status": "COMPLETED",
+          "fileAffected": "app/build.gradle.kts",
+          "beforeSnippet": "implementation(\"androidx.core:core-ktx:1.12.0\")\nimplementation(\"androidx.webkit:webkit:1.8.0\")",
+          "afterSnippet": "implementation(\"androidx.core:core-ktx:1.15.0\")\nimplementation(\"androidx.activity:activity-ktx:1.9.3\")\nimplementation(\"androidx.webkit:webkit:1.12.1\")",
+          "explanation": "Upgraded AndroidX Core, Activity, and WebKit libraries for API 36 compatibility."
+        },
+        {
+          "stepNumber": 6,
+          "title": "Enforce Android 15/16 Edge-to-Edge Window Insets",
+          "status": "COMPLETED",
+          "fileAffected": "app/src/main/java/.../MainActivity.kt",
+          "beforeSnippet": "super.onCreate(savedInstanceState)\nsetContentView(swipeRefresh)",
+          "afterSnippet": "super.onCreate(savedInstanceState)\nenableEdgeToEdge()\nsetContentView(swipeRefresh)\nViewCompat.setOnApplyWindowInsetsListener(swipeRefresh) { v, insets -> ... }",
+          "explanation": "Android 15+ enforces edge-to-edge rendering by default. Added WindowInsetsCompat padding listener so WebView content is never obscured by system bars."
+        },
+        {
+          "stepNumber": 7,
+          "title": "Enable Predictive Back Gesture Support",
+          "status": "COMPLETED",
+          "fileAffected": "app/src/main/AndroidManifest.xml",
+          "beforeSnippet": "<application android:supportsRtl=\"true\">",
+          "afterSnippet": "<application android:supportsRtl=\"true\" android:enableOnBackInvokedCallback=\"true\">",
+          "explanation": "Replaced legacy onBackPressed() with OnBackPressedDispatcher callback and enabled predictive back animations for Android 15/16."
+        },
+        {
+          "stepNumber": 8,
+          "title": "Harden WebView Asset Loading (Replace file:// with WebViewAssetLoader)",
+          "status": "COMPLETED",
+          "fileAffected": "app/src/main/java/.../MainActivity.kt",
+          "beforeSnippet": "settings.allowFileAccess = true\nwebView.loadUrl(\"file:///android_asset/www/index.html\")",
+          "afterSnippet": "settings.allowFileAccess = false\nval assetLoader = WebViewAssetLoader.Builder().addPathHandler(\"/assets/\", AssetsPathHandler(this)).build()\nwebView.loadUrl(\"https://appassets.androidplatform.net/assets/www/index.html\")",
+          "explanation": "Eliminated unsafe file:// WebView access flagged by Google Play security scanners while preserving full offline CORS-compatible local asset loading."
+        },
+        {
+          "stepNumber": 9,
+          "title": "Preserve Application ID & Increment Version Code",
+          "status": "COMPLETED",
+          "fileAffected": "app/build.gradle.kts",
+          "beforeSnippet": "applicationId = \"id.nusantara.poscatalog\"\nversionCode = 34",
+          "afterSnippet": "applicationId = \"id.nusantara.poscatalog\"\nversionCode = 35",
+          "explanation": "Preserved existing applicationId (id.nusantara.poscatalog) for Play Store update continuity and incremented versionCode from 34 to 35."
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}
